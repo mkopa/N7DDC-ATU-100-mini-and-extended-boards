@@ -515,15 +515,6 @@ void main() {
  cells_init();
  Soft_I2C_Init();
 
-
-
-
-
-
-
-
-
-
  if(type==0) {
  LATB.B6 = 1;
  LATB.B7 = 1;
@@ -874,7 +865,7 @@ void btn_push() {
  led_wr_str (0, 22, "ATU-100", 7);
  led_wr_str (2, 6, "EXT board", 9);
  led_wr_str (4, 16, "by N7DDC", 8);
- led_wr_str (6, 4, "FW ver 3.1", 10);
+ led_wr_str (6, 4, "SP4MK v3.2", 10);
  asm CLRWDT;
  Delay_ms(600);
  asm CLRWDT;
@@ -901,7 +892,7 @@ void btn_push() {
  Delay_ms(500);
  asm CLRWDT;
  led_wr_str (0, 4, "by N7DDC", 8);
- led_wr_str (1, 3, "FW ver 3.1", 10);
+ led_wr_str (1, 3, "SP4MK v3.2", 10);
  asm CLRWDT;
  Delay_ms(600);
  asm CLRWDT;
